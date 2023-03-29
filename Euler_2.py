@@ -42,9 +42,12 @@ x_values, y_values = euler_method(df, x_initial, y_initial, size_step, n)
 y_euler = y_values[-1]
 y_accurate = f(x_values[-1])
 
-print("x values:", x_values)
-print("y values:", y_values)
+for pt in range(len(x_values)):
+    print(f"Value at y({x_values[pt]}) = {y_values[pt]}")
+
+print()
 print(f"Error = {y_accurate-y_euler}")
+
 
 x_real = [1, 1.1, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9]
 y_real = [num ** 2 for num in x_values]
