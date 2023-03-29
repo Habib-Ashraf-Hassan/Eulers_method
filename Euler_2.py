@@ -33,7 +33,7 @@ def euler_method(f_prime, x0, y0, h, num_steps):
 
 x_initial = 1
 y_initial = 1
-size_step = 0.2
+size_step = 0.4
 n = 5
 
 x_values, y_values = euler_method(df, x_initial, y_initial, size_step, n)
